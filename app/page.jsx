@@ -13,7 +13,7 @@ const Home = () => {
           <h1 className="h1 mb-6">Hi, I'm <br /> <span className="text-accent">Thanh Tran</span> </h1>
           <p className="max-w-[500px] mb-9 text-white/80">I am an accomplished high school student with a strong background in computer science, robotics, and artificial intelligence. I have demonstrated exceptional skills in programming, leadership, and earning numerous awards and achievements. </p>
 
-          <div className="flex flex-col xl:flex-eow items-center gap-8">
+          <div className="flex flex-col xl:flex-row items-center gap-8">
             <Button
               variant="outline"
               size="lg"
