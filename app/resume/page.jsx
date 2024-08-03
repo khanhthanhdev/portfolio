@@ -175,7 +175,31 @@ const Resume = () => {
         </TabsList>
         <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
-                experience
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className="text-4xl font-bold">{experience.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+                  <ScrollArea className="h-[400px]">
+                      {experience.items.map((item, index) => {
+                        return <li>
+                          <span>{item.duration}</span>
+                          <h3>{item.position}</h3>
+                          <div>
+                            <span></span>
+                            <p>{item.company}</p>
+                          </div>
+                        </li>
+                      })}
+                  </ScrollArea>
+                </div>
+            </TabsContent>
+            <TabsContent value="education" className="w-full">
+                Education
+            </TabsContent>
+            <TabsContent value="skills" className="w-full">
+                Skills
+            </TabsContent>
+            <TabsContent value="about" className="w-full">
+                About
             </TabsContent>
         </div>
       </Tabs>
