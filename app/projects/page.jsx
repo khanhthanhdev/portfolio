@@ -11,6 +11,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -124,6 +125,11 @@ const Projects = () => {
                 </div>
               </SwiperSlide>
             })}
+            <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" 
+              btnStyles="bg-accent hover:bg-accent-hover text-primary  text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              iconStyles="text-white text-3xl group-hover:text-accent"
+            />
+
           </Swiper>
         </div>
       </div>
